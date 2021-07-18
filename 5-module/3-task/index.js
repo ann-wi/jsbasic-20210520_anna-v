@@ -1,6 +1,6 @@
 function initCarousel() {
   let currentSlideNumber = 0;
-  let slidesAmount = 4;
+  let slidesNumber = 4;
   let elem = document.querySelector("[data-carousel-holder]");
 
   let carouselInnerElem = elem.querySelector(".carousel__inner");
@@ -32,7 +32,7 @@ function initCarousel() {
     let offset = -carouselInnerElem.offsetWidth * currentSlideNumber;
     carouselInnerElem.style.transform = `translateX(${offset}px)`;
 
-    if (currentSlideNumber == slidesAmount - 1) {
+    if (currentSlideNumber == slidesNumber - 1) {
       carouselArrowRight.style.display = "none";
     } else {
       carouselArrowRight.style.display = "";
